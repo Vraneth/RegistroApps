@@ -1,0 +1,27 @@
+#qr {
+    display: flex;              /* Usa flexbox para organizar los elementos */
+    justify-content: center;    /* Centra horizontalmente */
+    align-items: center;        /* Centra verticalmente */
+    height: 50vh;              /* Aumenta la altura al 200% del alto de la pantalla */
+    width: 100vw;               /* Aumenta el ancho al 200% del ancho de la pantalla */
+}
+
+.button-container {
+    display: flex;               /* Usa flexbox */
+    justify-content: center;     /* Centra el contenido horizontalmente */
+    align-items: center;         /* Opcional, para centrar verticalmente si es necesario */
+    width: 100%;                 /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+ion-button.custom-button {
+    border-radius: 12px;   /* Bordes redondeados */
+    padding: 10px 20px;    /* Ajusta el relleno para hacerlo más pequeño o más grande */
+    width: auto;           /* Asegura que el botón no ocupe todo el ancho */
+    display: inline-block; /* Hace que el botón se ajuste al contenido */
+    margin: 10px 0;        /* Espacio alrededor del botón */
+}
+
+
+ion-card {
+    margin-top: 20px;
+}

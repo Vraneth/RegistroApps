@@ -1,0 +1,21 @@
+<ion-header class="homeheader" [translucent]="false"> 
+  <ion-img class="hl" src="https://pngimg.com/uploads/Half-Life/Half-Life_PNG76.png"></ion-img>
+  </ion-header>
+  <ion-toolbar color="blanco">
+    <ion-title class="titulo ion-text-center">Bienvenido Docente</ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="rosado">
+    <ion-segment (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="crear-clase">
+        <ion-icon name="home"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="crear-usuario">
+        <ion-icon name="book"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+
+<ion-content>
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>

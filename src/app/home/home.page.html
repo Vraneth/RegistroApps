@@ -1,0 +1,28 @@
+<ion-header class="homeheader" [translucent]="false">
+  <ion-img id="logo" src="assets/img/logo2.png" alt="Logo de Duoc UC"></ion-img>
+  <ion-button class="logout-button" color="primary" (click)="logout()">Cerrar Sesión</ion-button>
+</ion-header>
+<ion-toolbar color="blanco">
+  <ion-title class="titulo ion-text-center">Bienvenido Docente {{ usuarioNombre }}</ion-title>
+</ion-toolbar>
+<ion-toolbar color="primary" class="segmento-inferior">
+  <ion-segment (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="reglamento-profesor">
+      <ion-icon name="home-outline"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="historial-clases">
+      <ion-icon name="book-outline"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="codigoqr">
+      <ion-icon name="qr-code-outline"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="profesor-perfil">
+      <ion-icon name="school-outline"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+<ion-content>
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>
+

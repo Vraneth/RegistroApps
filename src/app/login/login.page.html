@@ -1,0 +1,34 @@
+<ion-header class="loginheader" [translucent]="false"> 
+  <ion-img id="logo" src="assets/img/logo2.png" alt="Logo de Duoc UC"></ion-img>
+</ion-header>
+
+<ion-content color="blanco">
+  <ion-card color="blanco">
+    <ion-card-header>
+      <ion-card-title>
+        <h1 class="fuente ion-text-center">Bienvenido a Duoc UC</h1>
+      </ion-card-title>
+    </ion-card-header>
+    
+    <!-- Envuelve el contenido en un formulario -->
+    <form (ngSubmit)="login()">
+      <ion-card-content>
+        <ion-item color="blanco">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input [(ngModel)]="email" type="text" name="email" required></ion-input>
+        </ion-item>
+        
+        <ion-item color="blanco">
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input [(ngModel)]="password" type="password" name="password" required></ion-input>
+        </ion-item>
+
+        <div class="button-container">
+          <ion-button color="primary" type="submit" expand="block" class="custom-button">Ingresar</ion-button>
+          <ion-button color="primary" (click)="goToRecuperarContrasena()" expand="block" class="custom-button">Recuperar Contraseña</ion-button>
+        </div>
+        
+      </ion-card-content>
+    </form>
+  </ion-card>
+</ion-content>

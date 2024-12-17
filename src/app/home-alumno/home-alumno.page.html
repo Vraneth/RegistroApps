@@ -1,0 +1,30 @@
+<ion-header class="homeheader">
+  <ion-img id="logo" src="assets/img/logo2.png" alt="Logo"></ion-img>
+  <ion-button class="logout-button" color="primary" (click)="logout()">Cerrar Sesión</ion-button>
+</ion-header>
+
+<br>
+<ion-toolbar color="blanco">
+  <ion-title class="titulo">
+    {{ usuarioNombre }}<br />
+    Bienvenido a portal DuocUC
+  </ion-title>
+</ion-toolbar>
+
+<ion-toolbar color="primary" class="segmento-inferior">
+  <ion-segment (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="historial-asistencia">
+      <ion-icon name="book-outline"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="camara-alumno">
+      <ion-icon name="camera-outline"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="alumno-perfil">
+      <ion-icon name="school-outline"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+<ion-content>
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>

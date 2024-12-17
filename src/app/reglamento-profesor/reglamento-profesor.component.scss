@@ -1,0 +1,15 @@
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Se asegura de que el contenedor ocupe el ancho completo */
+}
+
+.custom-button {
+    width: 200px !important; /* Asegura el ancho */
+    margin: 10px 0 !important; /* Espacio entre los botones */
+    text-align: center !important; /* Centra el texto */
+    --border-radius: 20px !important; /* Bordes redondeados */
+}
+

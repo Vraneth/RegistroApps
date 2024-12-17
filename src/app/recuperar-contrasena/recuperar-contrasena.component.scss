@@ -1,0 +1,87 @@
+ion-content {
+  display: flex; /* Usa flexbox para alinear los elementos */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100%; /* Asegura que ocupe toda la altura disponible */
+  background: linear-gradient(to bottom, #ffcc00, #3880ff); /* Fondo degradado entre amarillo y azul */
+  padding: 0 20px; /* Agrega un poco de espacio alrededor */
+}
+
+ion-card {
+  width: 100%; /* Usa todo el ancho disponible */
+  max-width: 380px; /* Limita el ancho máximo de la tarjeta */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  display: flex; /* Asegura el uso de flexbox para alinear los elementos */
+  flex-direction: column; /* Organiza los elementos en columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  margin: 0 auto; /* Asegura que la tarjeta esté centrada horizontalmente */
+}
+
+ion-card-title h1 {
+  font-size: 24px; /* Tamaño de fuente grande */
+  color: white; /* Color blanco del texto */
+  text-align: center; /* Centrado del texto */
+  margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+ion-button.custom-button {
+  margin-top: 20px; /* Margen superior del botón */
+  --background: #3880ff; /* Color de fondo personalizado */
+  --color: white; /* Color del texto */
+  border-radius: 25px; /* Bordes más redondeados */
+  padding: 12px 24px; /* Espaciado adecuado */
+  font-size: 16px; /* Tamaño de la fuente */
+  transition: background-color 0.3s ease; /* Transición para el hover */
+  text-align: center; /* Centra el texto dentro del botón */
+}
+
+ion-button.custom-button:hover {
+  --background: #0066cc; /* Cambio de color al pasar el ratón */
+}
+
+ion-item {
+  margin-bottom: 15px; /* Espaciado inferior entre los elementos */
+  --inner-padding-start: 16px; /* Añade un padding adicional para separar el label del input */
+}
+
+ion-label {
+  font-size: 14px; /* Tamaño de fuente del label */
+  margin-right: 10px; /* Margen derecho para separar el label del input */
+  margin-bottom: 5px; /* Espacio debajo del label */
+}
+
+ion-input {
+  --background: white; /* Color de fondo blanco para el input */
+  --color: black; /* Color del texto dentro del input */
+  --placeholder-color: #888; /* Color del placeholder */
+  --border-radius: 10px; /* Bordes redondeados para el input */
+  --padding-start: 16px; /* Aumenta el padding de inicio para separar el contenido del borde */
+}
+
+.fuente {
+  font-family: "Lucida Console", Courier, monospace; /* Fuente */
+  font-weight: bold; /* Negrita */
+}
+
+.card-recuperar {
+  margin: 20px; /* Espaciado alrededor de la tarjeta */
+  border-radius: 25px; /* Bordes redondeados en la tarjeta */
+  padding: 10px;
+}
+
+ion-card-header {
+  text-align: center;
+  margin-bottom: 20px; /* Espaciado entre header y contenido */
+}
+
+.content-centered {
+  text-align: center; /* Centra todo el contenido */
+}
+
+
+
+
+
+

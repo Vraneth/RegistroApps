@@ -1,0 +1,19 @@
+<ion-header color="blanco">
+  <ion-toolbar>
+    <ion-title>Registrar Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="blanco">
+  <div style="text-align: center; margin-bottom: 20px;">
+    <ion-button color="azul" (click)="startScanning()">Escanear Código QR</ion-button>
+  </div>
+
+  <!-- El video y el canvas no se muestran, pero están activos para capturar el QR -->
+  <div *ngIf="scannedResult">
+    <h2 style="text-align: center;">Resultado del Escaneo:</h2>
+    <p>{{ scannedResult }}</p>
+  </div>
+</ion-content>
+
+

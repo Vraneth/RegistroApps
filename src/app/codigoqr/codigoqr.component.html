@@ -1,0 +1,11 @@
+<ion-content>
+  <div class="button-container">
+    <ion-button (click)="mostrarQr()" class="custom-button">Registro de Asistencia</ion-button>
+  </div>
+  <ion-card *ngIf="showQr">
+    <qrcode id="qr" [qrdata]="qrValue"></qrcode>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Registra tu Asistencia</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

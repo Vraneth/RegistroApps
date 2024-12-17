@@ -1,0 +1,46 @@
+.homeheader {
+  background-color: var(--ion-color-blanco); /* Color de fondo oscuro */
+  padding: 10px;
+}
+
+.hl {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;}
+
+.titulo{
+    color: var(--ion-color-texto);
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+#logo {
+  height: 200px !important;
+  width: auto !important;
+  display: block;
+  margin: 0% auto;
+}
+
+ion-toolbar.segmento-inferior {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10; /* Para asegurarse de que esté encima del contenido */
+}
+
+.logout-button {
+  position: absolute; /* Ubicación fija en el header */
+  top: 5px; /* Espaciado desde arriba */
+  right: 5px; /* Alineado a la derecha */
+  font-size: 10px; /* Reduce el tamaño de la fuente */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px; /* Reduce el tamaño del botón */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1; /* Mantiene el botón encima */
+}
+
+.logout-button:hover {
+  background-color: #003366;
+}

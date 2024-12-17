@@ -1,0 +1,27 @@
+<ion-content color="blanco" class="content-centered">
+  <ion-img id="logo" src="assets/img/logo2.png" alt="Logo de Duoc UC"></ion-img>
+  <ion-card color="azul" class="card-recuperar">
+    <ion-card-header>
+      <ion-card-title>
+        <h1 class="fuente ion-text-center">Recuperar Contraseña</h1>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form (ngSubmit)="recuperarContrasena()">
+        <ion-item color="blanco">
+          <ion-label position="left">Correo Electrónico</ion-label>
+          <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+        </ion-item>
+        <ion-button class="custom-button" expand="block" type="submit" color="primary">Enviar</ion-button>
+        <ion-button (click)="regresarALogin()" expand="block" class="custom-button">Volver</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+
+
+
+
+

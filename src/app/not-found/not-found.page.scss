@@ -1,0 +1,18 @@
+#error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Cambié de 100vh a 100% para trabajar con ion-content */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#error {
+    font-size: 10rem; /* Tamaño grande para el texto */
+    font-weight: bold; /* Negrita */
+    color: black; /* Color que prefieras */
+    text-align: center; /* Centra el texto */
+}
+

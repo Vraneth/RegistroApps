@@ -1,0 +1,52 @@
+.loginheader {
+    background-color: var(--ion-color-blanco); /* Color de fondo oscuro */
+    padding: 10px;
+  }
+  
+  .hl1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;}
+  
+  .titulo{
+      color: var(--ion-color-texto);
+      font-family: "Lucida Console", Courier, monospace;
+  }
+
+  .fuente{
+    font-family: "Lucida Console", Courier, monospace;
+  }
+  #logo {
+    height: 200px !important;
+    width: auto !important;
+    display: block;
+    margin: 0% auto;
+}
+  
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Se asegura de que el contenedor ocupe el ancho completo */
+}
+
+.custom-button {
+  width: 200px; /* Ajusta el tamaño del botón a tu preferencia */
+  margin: 10px 0; /* Espacio entre los botones */
+  text-align: center; /* Centra el texto dentro del botón */
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Se asegura de que el contenedor ocupe el ancho completo */
+}
+
+.custom-button {
+  width: 200px !important; /* Asegura el ancho */
+  margin: 10px 0 !important; /* Espacio entre los botones */
+  text-align: center !important; /* Centra el texto */
+  --border-radius: 20px !important; /* Bordes redondeados */
+}

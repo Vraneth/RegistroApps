@@ -1,0 +1,99 @@
+.homeheader {
+  background-color: var(--ion-color-blanco);
+  padding: 10px 20px; /* Espaciado general */
+  display: flex;
+  flex-direction: column; /* Disposición vertical */
+  align-items: center; /* Centra contenido horizontalmente */
+  position: relative; /* Para posicionar el botón */
+  height: auto; /* Permite altura dinámica */
+}
+
+#logo {
+  max-height: 70px; /* Ajusta el tamaño del logo */
+  width: auto; /* Mantiene proporción */
+  margin-top: 30px; /* Baja más el logo */
+}
+
+.logout-button {
+  position: absolute; /* Ubicación fija en el header */
+  top: 5px; /* Espaciado desde arriba */
+  right: 5px; /* Alineado a la derecha */
+  font-size: 10px; /* Reduce el tamaño de la fuente */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px; /* Reduce el tamaño del botón */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1; /* Mantiene el botón encima */
+}
+
+.logout-button:hover {
+  background-color: #003366;
+}
+
+.titulo {
+  font-family: 'Roboto', sans-serif;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 500;
+  color: #004d99;
+  text-align: center;
+  margin: 20px auto; /* Espaciado entre el logo y el texto */
+  line-height: 1.2;
+  max-width: 90%;
+}
+
+ion-toolbar.segmento-inferior {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--ion-color-blanco);
+  border-top: 1px solid #e0e0e0;
+}
+
+body {
+  padding-bottom: 70px; /* Espacio entre el mensaje y el menú inferior */
+}
+
+/* Responsividad */
+@media (max-width: 767px) {
+  #logo {
+    max-height: 50px; /* Reduce el tamaño del logo en móviles */
+    margin-top: 15px; /* Espaciado más pequeño */
+  }
+
+  .logout-button {
+    font-size: 10px; /* Reduce aún más el tamaño en móviles */
+    padding: 4px 8px;
+  }
+
+  .titulo {
+    font-size: clamp(1.2rem, 6vw, 2rem);
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #logo {
+    max-height: 65px; /* Ajusta el tamaño para tablets */
+    margin-top: 20px;
+  }
+
+  .titulo {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  #logo {
+    max-height: 70px; /* Mantiene el tamaño en pantallas grandes */
+    margin-top: 30px;
+  }
+
+  .titulo {
+    font-size: clamp(2rem, 2vw, 3rem);
+  }
+}
+
+
